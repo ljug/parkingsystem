@@ -16,8 +16,6 @@ public class FareCalculatorService {
         Date outD = ticket.getOutTime();
         long diff = outD.getTime() - inD.getTime();
         
-        
-
         //TODO: Some tests are failing here. Need to check if this logic is correct
        
         double duration;
