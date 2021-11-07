@@ -22,7 +22,7 @@ public class FareCalculatorService {
         int d_minutes = (int) (diff / (1000*60));
         if (d_minutes < 15) duration = 0;
         else duration = d_minutes / 60.;
-        System.out.println("Duration " + duration);       
+        System.out.println("nb minutes"+ d_minutes + "Duration " + duration);       
         switch (ticket.getParkingSpot().getParkingType()){
             case CAR: {
                 ticket.setPrice(duration * Fare.CAR_RATE_PER_HOUR);
